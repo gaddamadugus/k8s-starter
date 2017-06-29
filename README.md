@@ -24,12 +24,14 @@ $sudo chown -R z001j12 /usr/local
 $brew update
 
 ### install minikube through brew
+'''
 $ brew cask install minikube
 ==> Creating Caskroom at /usr/local/Caskroom
 ==> Satisfying dependencies
 ==> Installing Formula dependencies from Homebrew
 kubernetes-cli ... ==> Error: The `brew link` step did not complete successfully
 Error: Command failed to execute!
+'''
 
 ### download virtual box, if you got one already better delete/uninstall first
 https://www.virtualbox.org/wiki/Downloads
