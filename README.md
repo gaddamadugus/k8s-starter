@@ -24,6 +24,7 @@ $sudo chown -R z001j12 /usr/local
 $brew update
 
 ### install minikube through brew
+
 '''
 $ brew cask install minikube
 ==> Creating Caskroom at /usr/local/Caskroom
