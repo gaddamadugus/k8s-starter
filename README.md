@@ -25,14 +25,14 @@ $brew update
 
 ### install minikube through brew
 
-'''
+```
 $ brew cask install minikube
 ==> Creating Caskroom at /usr/local/Caskroom
 ==> Satisfying dependencies
 ==> Installing Formula dependencies from Homebrew
 kubernetes-cli ... ==> Error: The `brew link` step did not complete successfully
 Error: Command failed to execute!
-'''
+```
 
 ### download virtual box, if you got one already better delete/uninstall first
 https://www.virtualbox.org/wiki/Downloads
@@ -40,6 +40,7 @@ https://www.virtualbox.org/wiki/Downloads
 Version 5.1.22
 
 ### re-install minikube after VirtualBox is setup
+```
 $ brew cask install minikube
 ==> Satisfying dependencies
 ==> Installing Formula dependencies from Homebrew
@@ -51,13 +52,19 @@ complete
 ==> Installing Cask minikube
 Error: It seems there is already a Binary at '/usr/local/bin/minikube'; not linking.
 Error: Install incomplete.
+```
 
 ### delete old binaries if not deleted at first
+
+```
 $ rm /usr/local/bin/minikube
 $ rm /usr/local/bin/boot2docker.bak
 $ rm /usr/local/bin/docker.bak
+```
 
 ### try to re-install minikube
+
+```
 $ brew cask install minikube
 ==> Satisfying dependencies
 ==> Installing Formula dependencies from Homebrew
@@ -69,10 +76,13 @@ Already downloaded: /Users/z001j12/Library/Caches/Homebrew/Cask/minikube--0.19.1
 ==> Installing Cask minikube
 ==> Linking Binary 'minikube-darwin-amd64' to '/usr/local/bin/minikube'.
 🍺  minikube was successfully installed!
+```
 
 ### install xhyve-driver, follow the readme
 https://github.com/kubernetes/minikube/blob/master/docs/drivers.md#xhyve-driver
 
+### start minikube
+```
 $ minikube start
 Starting local Kubernetes v1.6.4 cluster...
 Starting VM...
@@ -84,6 +94,7 @@ Starting cluster components...
 Connecting to cluster...
 Setting up kubeconfig...
 Kubectl is now configured to use the cluster.
+```
 
 =================================
 =      MINI KUBE SETUP DONE     =
@@ -93,4 +104,6 @@ Kubectl is now configured to use the cluster.
 https://docs.docker.com/docker-for-mac/install/#install-and-run-docker-for-mac
 
 # register minikube in-built docker bin to user local bin
-eval $(minikube docker-env)
+```
+$ eval $(minikube docker-env)
+```
