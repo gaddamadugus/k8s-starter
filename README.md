@@ -96,10 +96,6 @@ Setting up kubeconfig...
 Kubectl is now configured to use the cluster.
 ```
 
-=================================
-=      MINI KUBE SETUP DONE     =
-=================================
-
 # Install docker, follow readme
 https://docs.docker.com/docker-for-mac/install/#install-and-run-docker-for-mac
 
